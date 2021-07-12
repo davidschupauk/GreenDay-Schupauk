@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Day: Contactanos</title>
+    <meta name="description" content="Como banda, leemos todos los mensajes, escribinos!">
+    <meta name="keywords" content="Green Day, Contacto, Mensaje, Preguntas, Respuestas, Mail, Banda">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../css/estiloProyecto.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img id="logo" src="../media/logoGD.png" alt=""></a>
+    </header>
+    <hr>
+    <!--Listado Menu-->
+    <nav class="nav">   
+        <ul class="nav__lista">
+
+            <li class="nav__item">
+                <a class="nav__link" href="../index.html">Home</a>
+            </li>
+            <li>
+                <a class="nav__link" href="discografia.html">Discografia</a>
+            </li>
+            <li>
+                <a class="nav__link" href="shop.html">Shop</a>
+            </li>
+            <li>
+                <a class="nav__link" href="tours.html">Tours</a>
+            </li>
+            <li>
+                <a class="nav__link nav__link--activo" href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <!--Fin listado menu-->
+    <hr>
+    <!--Comienzo Formulario-->
+    <section>
+        <article id="formContacto">
+           <h1>Contactanos</h1>
+           <form action="" method="GET">
+            <label for="nombreUsuario">Ingrese su nombre</label>
+            <input type="text" id="nombreUsuario"><br>
+            <label for="emailUsuario">Ingrese su email</label>
+            <input type="email" id="emailUsuario"><br>
+            <fieldset>
+                <legend>Tipo de consulta</legend>
+                <select name="" id="">
+                    <option value="">Informacion sobre tours</option>
+                    <option value="">Eventos Privados</option>
+                    <option value="">Compra de merchandaising</option>
+                </select>
+            </fieldset><br>
+            <label for="mensajeUsuario">Ingrese su Mensaje</label>
+            <textarea name="" id="mensajeUsuario" cols="30" rows="10"></textarea><br>
+            
+    
+            <!--Radio button-->
+            <p>Cual es el mejor integrante?</p>
+            Billie Joe Armstrong<input type="radio" name="integrantes"><br>
+            Mike Dirnt<input type="radio" name="integrantes"><br>
+            Tre Cool<input type="radio" name="integrantes"><br>
+
+            <!--Checkbox-->
+            Aceptas los terminos y condiciones <input type="checkbox"><br>
+            <input type="submit"><br>
+            <input type="reset"><br>
+        </form>
+        </article>        
+    </section>
+    <!--Fin Formulario-->
+    <hr>
+    <!--Footer Menu-->
+    <footer class="footer">
+        <p>Todos los derechos reservados (2021)</p>
+        <ul class="footer__list">
+
+          <li class="footer__item">
+              <a class="footer__link" href="../index.html">Home</a>
+          </li>
+          <li class="footer__item">
+              <a class="footer__link" href="discografia.html">Discografia</a>
+          </li>
+          <li class="footer__item">
+              <a class="footer__link" href="shop.html">Shop</a>
+          </li>
+          <li class="footer__item">
+              <a class="footer__link" href="tours.html">Tours</a>
+          </li>
+          <li class="footer__item">
+              <a class="footer__link footer__link--activo" href="contacto.html">Contacto</a>
+          </li>
+      </ul>
+    </footer>
+    <!--Fin footer menu-->
+</body>
+</html>
