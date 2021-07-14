@@ -8,9 +8,10 @@
     <meta name="description" content="Como banda, leemos todos los mensajes, escribinos!">
     <meta name="keywords" content="Green Day, Contacto, Mensaje, Preguntas, Respuestas, Mail, Banda">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" href="../css/estiloProyecto.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estiloProyecto.css">
 </head>
 <body>
     <header>
@@ -44,34 +45,59 @@
     <section>
         <article id="formContacto">
            <h1>Contactanos</h1>
-           <form action="" method="GET">
-            <label for="nombreUsuario">Ingrese su nombre</label>
-            <input type="text" id="nombreUsuario"><br>
-            <label for="emailUsuario">Ingrese su email</label>
-            <input type="email" id="emailUsuario"><br>
-            <fieldset>
-                <legend>Tipo de consulta</legend>
-                <select name="" id="">
-                    <option value="">Informacion sobre tours</option>
-                    <option value="">Eventos Privados</option>
-                    <option value="">Compra de merchandaising</option>
+           <form>
+                <div class="input-group">
+                    <span class="input-group-text">Nombre y Apellido</span>
+                    <input type="text" aria-label="First name" class="form-control">
+                    <input type="text" aria-label="Last name" class="form-control">
+                </div>
+                <br>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Direccion de Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Nunca compartiremos su direccion de Email con terceros</div>
+                </div>
+                <br>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Tipo de consulta</option>
+                    <option value="1">Informacion sobre Tours</option>
+                    <option value="2">Eventos Privados</option>
+                    <option value="3">Compra de merchandaising</option>
+                    <option value="4">Otros</option>
                 </select>
-            </fieldset><br>
-            <label for="mensajeUsuario">Ingrese su Mensaje</label>
-            <textarea name="" id="mensajeUsuario" cols="30" rows="10"></textarea><br>
-            
-    
-            <!--Radio button-->
-            <p>Cual es el mejor integrante?</p>
-            Billie Joe Armstrong<input type="radio" name="integrantes"><br>
-            Mike Dirnt<input type="radio" name="integrantes"><br>
-            Tre Cool<input type="radio" name="integrantes"><br>
-
-            <!--Checkbox-->
-            Aceptas los terminos y condiciones <input type="checkbox"><br>
-            <input type="submit"><br>
-            <input type="reset"><br>
-        </form>
+                <br>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Ingrese su mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <br>
+                <p>Cual es el mejor integrante?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Mike Dirnt
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Tre Cool
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                    <label class="form-check-label" for="flexRadioDefault3">
+                      Billi Joe Armstrong
+                    </label>
+                </div>
+                <br>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Acepto los terminos y condiciones</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-primary">Limpiar texto</button>
+          </form>
         </article>        
     </section>
     <!--Fin Formulario-->
@@ -99,5 +125,7 @@
       </ul>
     </footer>
     <!--Fin footer menu-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
