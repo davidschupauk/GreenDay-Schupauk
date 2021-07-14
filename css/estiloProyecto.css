@@ -17,7 +17,7 @@
     color: #25A244; }
   #biografia {
     color: #10451D; }
-  nav .nav__lista {
+  .nav .nav__list {
     font-size: 35px;
     color: #25A244;
     list-style-type: none;
@@ -29,20 +29,20 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center; }
-  nav .nav__item {
+  .nav .nav__item {
     display: flex; }
-  nav .nav__link {
+  .nav .nav__link {
     font-size: 35px;
     color: #25A244;
     text-transform: uppercase;
     text-decoration: none; }
-    nav .nav__link--activo {
+    .nav .nav__link--activo {
       color: #2DC653; }
-    nav .nav__link--activo:hover {
+    .nav .nav__link--activo:hover {
       animation-name: aumentoEscala;
       animation-duration: 2s;
       transform: scale(1.5, 1.5); }
-  nav .nav__link:hover {
+  .nav .nav__link:hover {
     animation-name: aumentoEscala;
     animation-duration: 2s;
     transform: scale(1.5, 1.5); }
@@ -187,7 +187,7 @@
     color: #25A244; }
   #biografia {
     color: #10451D; }
-  nav .nav__lista {
+  .nav .nav__list {
     font-size: 35px;
     color: #25A244;
     list-style-type: none;
@@ -200,20 +200,20 @@
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: stretch; }
-  nav .nav__item {
+  .nav .nav__item {
     display: flex; }
-  nav .nav__link {
+  .nav .nav__link {
     font-size: 35px;
     color: #25A244;
     text-decoration: none;
     text-transform: uppercase; }
-    nav .nav__link--activo {
+    .nav .nav__link--activo {
       color: #2DC653; }
-    nav .nav__link--activo:hover {
+    .nav .nav__link--activo:hover {
       animation-name: aumentoEscala;
       animation-duration: 2s;
       transform: scale(1.5, 1.5); }
-  nav .nav__link:hover {
+  .nav .nav__link:hover {
     animation-name: aumentoEscala;
     animation-duration: 2s;
     transform: scale(1.5, 1.5); }
@@ -362,7 +362,7 @@
     color: #25A244; }
   #biografia {
     color: #10451D; }
-  nav .nav__lista {
+  .nav .nav__list {
     font-size: 35px;
     color: #25A244;
     list-style-type: none;
@@ -375,20 +375,20 @@
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: stretch; }
-  nav .nav__item {
+  .nav .nav__item {
     display: flex; }
-  nav .nav__link {
+  .nav .nav__link {
     font-size: 35px;
     color: #25A244;
     text-decoration: none;
     text-transform: uppercase; }
-    nav .nav__link--activo {
+    .nav .nav__link--activo {
       color: #2DC653; }
-    nav .nav__link--activo:hover {
+    .nav .nav__link--activo:hover {
       animation-name: aumentoEscala;
       animation-duration: 2s;
       transform: scale(1.5, 1.5); }
-  nav .nav__link:hover {
+  .nav .nav__link:hover {
     animation-name: aumentoEscala;
     animation-duration: 2s;
     transform: scale(1.5, 1.5); }

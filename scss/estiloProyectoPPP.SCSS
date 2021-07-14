@@ -33,8 +33,8 @@ $title-color: #25A244;
     }
     
    
-    nav{
-        .nav__lista{
+    .nav{
+        .nav__list{
             @include linkSize(35px, $title-color);
             list-style-type: none;
             text-align: center;
@@ -280,8 +280,8 @@ $title-color: #25A244;
         color: #10451D;
     }
 
-    nav{
-        .nav__lista{
+    .nav{
+        .nav__list{
             @include linkSize(35px,$title-color);
             list-style-type: none;
             text-align: center;
@@ -533,8 +533,8 @@ $title-color: #25A244;
     #biografia{
         color: #10451D;
     }
-    nav{
-        .nav__lista{
+    .nav{
+        .nav__list{
             @include linkSize(35px,$title-color);
             list-style-type: none;
             text-align: center;
