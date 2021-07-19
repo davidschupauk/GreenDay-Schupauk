@@ -1,3 +1,81 @@
+/*FOOTER*/
+footer {
+  background: black; }
+  footer a {
+    color: #fff;
+    font-size: 17px;
+    transition-duration: 0.2s;
+    text-decoration: none; }
+  footer a:hover {
+    color: #3d6b01;
+    text-decoration: none; }
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF; }
+
+.footer-middle {
+  padding-top: 1.5em;
+  color: white; }
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0; }
+
+ul.social-network li {
+  display: inline;
+  margin: 10px; }
+
+/* footer social icons */
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 10px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 30px; }
+
+.social-circle li i {
+  margin: 10px;
+  line-height: 30px;
+  text-align: center; }
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s; }
+
+.social-circle i {
+  color: black;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s; }
+
+.social-network a {
+  background-color: #3d6b01; }
+
+.accordion-button {
+  font-size: 20px; }
+
+.accordion-collapse {
+  font-size: 2 0px; }
+
 @keyframes aumentoEscala {
   from {
     transform: scale(1, 1); }
@@ -42,25 +120,9 @@ h2 {
     align-items: center;
     text-transform: uppercase; }
   #bloqueIndex {
-    width: 100%;
+    width: 95%;
     padding: 5px;
-    display: grid;
-    grid-template-columns: 98%;
-    grid-template-rows: 420px 300px 600px;
-    justify-content: space-around;
-    grid-template-areas: "ar1" "ar2" "bio";
-    grid-column-gap: 10px;
-    grid-row-gap: 10px; }
-  .articuloUno {
-    grid-area: ar1; }
-  .articuloDos {
-    grid-area: ar2; }
-  .bioIndex {
-    border: 2px dashed black;
-    padding: 15px;
-    font-size: 17px;
-    grid-area: bio;
-    overflow: scroll; }
+    margin: 10px; }
   #formContacto {
     border: 1.5px solid black;
     padding: 10px; }
@@ -70,6 +132,8 @@ h2 {
     .table .table__row {
       padding: 10px; }
       .table .table__row .table__item {
+        padding: 10px;
+        border: 1.5px solid black;
         text-transform: capitalize;
         text-align: center; }
         .table .table__row .table__item--titulo {
@@ -124,36 +188,7 @@ h2 {
         border: 2px dashed black;
         padding: 15px;
         font-size: 20px;
-        grid-area: tre; }
-  .footer .footer__list {
-    font-size: 20px;
-    color: #25A244;
-    list-style-type: none;
-    text-align: center;
-    letter-spacing: 5px;
-    text-decoration: none;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center; }
-  .footer .footer__item {
-    display: flex; }
-  .footer .footer__link {
-    font-size: 20px;
-    color: #25A244;
-    text-decoration: none;
-    text-transform: uppercase; }
-    .footer .footer__link--activo {
-      color: #2DC653; }
-    .footer .footer__link--activo:hover {
-      animation-name: aumentoEscala;
-      animation-duration: 2s;
-      transform: scale(1.5, 1.5); }
-  .footer .footer__link:hover {
-    animation-name: aumentoEscala;
-    animation-duration: 2s;
-    transform: scale(1.5, 1.5); } }
+        grid-area: tre; } }
 
 @media only screen and (min-width: 650px) {
   .navbar-nav {
@@ -162,15 +197,9 @@ h2 {
     align-items: center;
     text-transform: uppercase; }
   #bloqueIndex {
-    width: 100%;
+    width: 95%;
     padding: 5px;
-    display: grid;
-    grid-template-columns: 98%;
-    grid-template-rows: 420px 420px 600px;
-    justify-content: space-around;
-    grid-template-areas: "ar1" "ar2" "bio";
-    grid-column-gap: 10px;
-    grid-row-gap: 10px; }
+    margin: 10px; }
   .articuloUno {
     grid-area: ar1; }
   .articuloDos {
@@ -246,37 +275,7 @@ h2 {
         border: 2px dashed black;
         padding: 15px;
         font-size: 20px;
-        grid-area: tre; }
-  .footer .footer__list {
-    font-size: 15px;
-    color: #25A244;
-    list-style-type: none;
-    text-align: center;
-    letter-spacing: 5px;
-    text-decoration: none;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: stretch; }
-  .footer .footer__item {
-    display: flex; }
-  .footer .footer__link {
-    font-size: 15px;
-    color: #25A244;
-    text-decoration: none;
-    text-transform: uppercase; }
-    .footer .footer__link--activo {
-      color: #2DC653; }
-    .footer .footer__link--activo:hover {
-      animation-name: aumentoEscala;
-      animation-duration: 2s;
-      transform: scale(1.5, 1.5); }
-  .footer .footer__link:hover {
-    animation-name: aumentoEscala;
-    animation-duration: 2s;
-    transform: scale(1.5, 1.5); } }
+        grid-area: tre; } }
 
 @media only screen and (min-width: 840px) {
   .navbar-nav {
@@ -292,25 +291,9 @@ h2 {
     align-items: center;
     text-transform: uppercase; }
   #bloqueIndex {
-    width: 100%;
+    width: 95%;
     padding: 5px;
-    display: grid;
-    grid-template-columns: 48% 48%;
-    grid-template-rows: 420px 480px;
-    justify-content: space-around;
-    grid-template-areas: "ar1 bio" "ar2 bio";
-    grid-column-gap: 10px;
-    grid-row-gap: 10px; }
-  .articuloUno {
-    grid-area: ar1; }
-  .articuloDos {
-    grid-area: ar2; }
-  .bioIndex {
-    border: 2px dashed black;
-    padding: 25px;
-    font-size: 23px;
-    grid-area: bio;
-    overflow: scroll; }
+    margin: 10px; }
   #formContacto {
     border: 1.5px solid black;
     padding: 10px; }
@@ -376,34 +359,4 @@ h2 {
         border: 2px dashed black;
         padding: 15px;
         font-size: 20px;
-        grid-area: tre; }
-  .footer .footer__list {
-    font-size: 35px;
-    color: #25A244;
-    list-style-type: none;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 5px;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: stretch; }
-  .footer .footer__item {
-    display: flex; }
-  .footer .footer__link {
-    font-size: 35px;
-    color: #25A244;
-    text-decoration: none;
-    text-transform: uppercase; }
-    .footer .footer__link--activo {
-      color: #2DC653; }
-    .footer .footer__link--activo:hover {
-      animation-name: aumentoEscala;
-      animation-duration: 2s;
-      transform: scale(1.5, 1.5); }
-  .footer .footer__link:hover {
-    animation-name: aumentoEscala;
-    animation-duration: 2s;
-    transform: scale(1.5, 1.5); } }
+        grid-area: tre; } }

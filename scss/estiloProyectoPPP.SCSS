@@ -1,4 +1,104 @@
 
+/*FOOTER*/
+
+footer {
+    background: black;
+    a {
+      color: #fff;
+      font-size: 17px;
+      transition-duration: 0.2s;
+      text-decoration: none;
+    }
+    a:hover {
+     color: #3d6b01;
+     text-decoration: none;
+    } 
+   
+  }
+  
+  
+  .copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+  }
+  
+  .footer-middle {
+    padding-top: 1.5em;
+    color: white;
+  }
+  
+  
+  ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+   
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 10px;
+
+  }
+  
+  
+  /* footer social icons */
+  
+  
+  .social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+  }
+  
+  .social-circle li i {
+    margin: 10px;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .social-circle li a:hover i,
+  .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  
+  .social-circle i {
+    color: black;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+  }
+  
+  .social-network a {
+    background-color: #3d6b01;
+  }
+   
+.accordion-button{
+    font-size: 20px;
+}
+.accordion-collapse{
+    font-size: 2
+    0px;
+}
 $title-color: #25A244;
 @keyframes aumentoEscala {
     from{
@@ -10,7 +110,6 @@ $title-color: #25A244;
     }
     
 }
-
 
 body{
     background-image: radial-gradient(circle, rgba(183,239,197,1) 62%, rgba(124,124,124,1) 100%);
@@ -63,38 +162,9 @@ h2{
 
     
     #bloqueIndex{
-        width: 100%;
+        width: 95%;
         padding: 5px;
-        display: grid;
-        grid-template-columns: 98%;
-        grid-template-rows: 420px 300px 600px;
-        justify-content: space-around;
-        grid-template-areas: "ar1"
-                             "ar2"
-                             "bio";
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-    }
-    
-    .articuloUno{
-        
-        grid-area: ar1;
-    
-    }
-    
-    .articuloDos{
-      
-        grid-area: ar2;
-    }
-    
-    .bioIndex{
-       
-       border: 2px dashed black;
-       padding: 15px;
-       font-size: 17px;
-       grid-area: bio;
-       overflow: scroll;
-    
+        margin: 10px;
     }
     
     #formContacto{
@@ -108,6 +178,8 @@ h2{
         .table__row{
             padding: 10px;
             .table__item{
+                padding: 10px;
+                border: 1.5px solid black;
                 text-transform: capitalize;
                 text-align: center;
                 &--titulo{
@@ -182,44 +254,7 @@ h2{
         }
     
     }
-    .footer{
-        .footer__list{
-            @include linkSize(20px, $title-color);
-            list-style-type: none;
-            text-align: center;
-            letter-spacing:5px;
-            text-decoration: none;
-            display: flex;
-            width: 100%;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-items: center;
-            
-        }
-        .footer__item{
-            display: flex;
-            
-        }
-        .footer__link{
-            @include linkSize(20px, $title-color);
-            text-decoration: none;
-            text-transform: uppercase;  
-            &--activo{
-                color: #2DC653;
-            }
-            &--activo:hover{
-                animation-name: aumentoEscala;
-                animation-duration: 2s;
-                transform: scale(1.5,1.5);
-            }
-        }
-        .footer__link:hover{
-            animation-name: aumentoEscala;
-            animation-duration: 2s;
-            transform: scale(1.5,1.5);
-        }
-        
-    }
+    
 
 }
 
@@ -236,19 +271,10 @@ h2{
         text-transform: uppercase;
     }
 
-    
     #bloqueIndex{
-        width: 100%;
-        padding: 5px;
-        display: grid;
-        grid-template-columns: 98%;
-        grid-template-rows: 420px 420px 600px;
-        justify-content: space-around;
-        grid-template-areas: "ar1"
-                             "ar2"
-                             "bio";
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
+            width: 95%;
+            padding: 5px;
+            margin: 10px;
     }
     
     .articuloUno{
@@ -359,47 +385,7 @@ h2{
         }
     
     }
-    .footer{
-        .footer__list{
-            @include linkSize(15px, $title-color);
-            list-style-type: none;
-            text-align: center;
-            letter-spacing:5px;
-            text-decoration: none;
-            display: flex;
-            width: 100%;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-evenly;
-            align-items: stretch;
-            
-        }
-        .footer__item{
-            display: flex;
-            
-        }
-        .footer__link{
-            @include linkSize(15px,$title-color);
-            text-decoration: none;
-            text-transform: uppercase;
-              
-            &--activo{
-                color: #2DC653;
-                
-            }
-            &--activo:hover{
-                animation-name: aumentoEscala;
-                animation-duration: 2s;
-                transform: scale(1.5,1.5);
-            }
-        }
-        .footer__link:hover{
-            animation-name: aumentoEscala;
-            animation-duration: 2s;
-            transform: scale(1.5,1.5);
-        }
-        
-    }
+    
 }
 @media only screen and (min-width: 840px){
     @mixin linkSize($sizeLink, $tonoColor){
@@ -431,40 +417,9 @@ h2{
     
     
     #bloqueIndex{
-        width: 100%;
+        width: 95%;
         padding: 5px;
-        display: grid;
-        grid-template-columns: 48% 48%;
-        grid-template-rows: 420px 480px;
-        justify-content: space-around;
-        grid-template-areas: "ar1 bio"
-                             "ar2 bio";
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-                           
-    
-    }
-    
-    .articuloUno{
-        
-        grid-area: ar1;
-
-    
-    }
-    
-    .articuloDos{
-      
-        grid-area: ar2;
-    }
-    
-    .bioIndex{
-       
-       border: 2px dashed black;
-       padding: 25px;
-       font-size:23px;
-       grid-area: bio;
-       overflow: scroll;
-    
+        margin: 10px;
     }
     
     #formContacto{
@@ -556,45 +511,4 @@ h2{
     
     }
     
-    .footer{
-        .footer__list{
-            @include linkSize(35px,$title-color);
-            list-style-type: none;
-            text-align: center;
-            text-decoration: none;
-            letter-spacing:5px;
-            display: flex;
-            width: 100%;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-evenly;
-            align-items: stretch;
-            
-        }
-        .footer__item{
-            display: flex;
-            
-        }
-        .footer__link{
-            @include linkSize(35px,$title-color);
-            text-decoration: none;
-            text-transform: uppercase;
- 
-            &--activo{
-                color: #2DC653;
-
-            }
-            &--activo:hover{
-                animation-name: aumentoEscala;
-                animation-duration: 2s;
-                transform: scale(1.5,1.5);
-            }
-        }
-        .footer__link:hover{
-            animation-name: aumentoEscala;
-            animation-duration: 2s;
-            transform: scale(1.5,1.5);
-        }
-        
-    }
 }
