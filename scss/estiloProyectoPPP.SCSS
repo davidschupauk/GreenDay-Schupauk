@@ -140,11 +140,7 @@ h2{
 #biografia{
     color: #10451D;
 }
-.shop{
-    img{
-        object-fit: contain;
-    }
-}
+
 @media only screen and (max-width:650px){
     
     @mixin linkSize($sizeLink, $tonoColor){
@@ -215,13 +211,16 @@ h2{
     }
 
     .shop{
+        img{
+            object-fit: contain;
+        }
         width: 98%;
         padding: 10px;
         display: grid;
         grid-template-columns: 98%;
-        grid-template-rows: 450px 450px 450px ;
+        grid-template-rows: 450px 450px 450px 450px 450px 450px ;
         justify-content: space-around;
-        grid-template-areas: "mike" "billie" "tre";
+        grid-template-areas: "mike" "billie" "tre" "mike2" "billie2" "tre2";
         grid-column-gap: 10px;
         grid-row-gap: 10px;
         
@@ -250,6 +249,28 @@ h2{
                 padding: 15px;
                 font-size: 20px;
                 grid-area: tre;
+            }
+            &--cuatro{
+                /*@extend .shop__item;*/
+                border: 2px dashed black;
+                padding: 15px;
+                font-size: 20px;
+                grid-area: mike2;
+            }
+            &--cinco{
+                /*@extend .shop__item;*/
+                border: 2px dashed black;
+                padding: 15px;
+                font-size: 20px;
+                grid-area: billie2;
+            }
+        
+            &--seis{
+                /*@extend .shop__item;*/
+                border: 2px dashed black;
+                padding: 15px;
+                font-size: 20px;
+                grid-area: tre2;
             }
         }
     
@@ -347,13 +368,16 @@ h2{
     }
 
     .shop{
+        img{
+            object-fit: contain;
+        }
         width: 98%;
         padding: 10px;
         display: grid;
-        grid-template-columns: 98%;
+        grid-template-columns: 48% 48%;
         grid-template-rows: 450px 450px 450px ;
         justify-content: space-around;
-        grid-template-areas: "mike" "billie" "tre";
+        grid-template-areas: "mike billie" "tre mike2" "billie2 tre2";
         grid-column-gap: 10px;
         grid-row-gap: 10px;
         &__item{
@@ -381,6 +405,28 @@ h2{
                 padding: 15px;
                 font-size: 20px;
                 grid-area: tre;
+            }
+            &--cuatro{
+                /*@extend .shop__item;*/
+                border: 2px dashed black;
+                padding: 15px;
+                font-size: 20px;
+                grid-area: mike2;
+            }
+            &--cinco{
+                /*@extend .shop__item;*/
+                border: 2px dashed black;
+                padding: 15px;
+                font-size: 20px;
+                grid-area: billie2;
+            }
+        
+            &--seis{
+                /*@extend .shop__item;*/
+                border: 2px dashed black;
+                padding: 15px;
+                font-size: 20px;
+                grid-area: tre2;
             }
         }
     
@@ -472,13 +518,16 @@ h2{
     
     
     .shop{
+        img{
+            object-fit: contain;
+        }
         width: 98%;
         padding: 10px;
         display: grid;
         grid-template-columns: 30% 30% 30%;
-        grid-template-rows: 450px ;
+        grid-template-rows: 450px 450px;
         justify-content: space-around;
-        grid-template-areas: "mike billie tre";
+        grid-template-areas: "mike billie tre" "mike2 billie2 tre2";
         grid-column-gap: 10px;
         grid-row-gap: 10px;
         &__item{
@@ -506,6 +555,28 @@ h2{
                 padding: 15px;
                 font-size: 20px;
                 grid-area: tre;
+            }
+            &--cuatro{
+                /*@extend .shop__item;*/
+                border: 2px dashed black;
+                padding: 15px;
+                font-size: 20px;
+                grid-area: mike2;
+            }
+            &--cinco{
+                /*@extend .shop__item;*/
+                border: 2px dashed black;
+                padding: 15px;
+                font-size: 20px;
+                grid-area: billie2;
+            }
+        
+            &--seis{
+                /*@extend .shop__item;*/
+                border: 2px dashed black;
+                padding: 15px;
+                font-size: 20px;
+                grid-area: tre2;
             }
         }
     

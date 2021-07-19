@@ -110,9 +110,6 @@ h2 {
 #biografia {
   color: #10451D; }
 
-.shop img {
-  object-fit: contain; }
-
 @media only screen and (max-width: 650px) {
   .navbar-nav {
     font-size: 55px;
@@ -162,11 +159,13 @@ h2 {
     padding: 10px;
     display: grid;
     grid-template-columns: 98%;
-    grid-template-rows: 450px 450px 450px;
+    grid-template-rows: 450px 450px 450px 450px 450px 450px;
     justify-content: space-around;
-    grid-template-areas: "mike" "billie" "tre";
+    grid-template-areas: "mike" "billie" "tre" "mike2" "billie2" "tre2";
     grid-column-gap: 10px;
     grid-row-gap: 10px; }
+    .shop img {
+      object-fit: contain; }
     .shop__item {
       border: 2px dashed black;
       padding: 15px;
@@ -188,7 +187,25 @@ h2 {
         border: 2px dashed black;
         padding: 15px;
         font-size: 20px;
-        grid-area: tre; } }
+        grid-area: tre; }
+      .shop__item--cuatro {
+        /*@extend .shop__item;*/
+        border: 2px dashed black;
+        padding: 15px;
+        font-size: 20px;
+        grid-area: mike2; }
+      .shop__item--cinco {
+        /*@extend .shop__item;*/
+        border: 2px dashed black;
+        padding: 15px;
+        font-size: 20px;
+        grid-area: billie2; }
+      .shop__item--seis {
+        /*@extend .shop__item;*/
+        border: 2px dashed black;
+        padding: 15px;
+        font-size: 20px;
+        grid-area: tre2; } }
 
 @media only screen and (min-width: 650px) {
   .navbar-nav {
@@ -248,12 +265,14 @@ h2 {
     width: 98%;
     padding: 10px;
     display: grid;
-    grid-template-columns: 98%;
+    grid-template-columns: 48% 48%;
     grid-template-rows: 450px 450px 450px;
     justify-content: space-around;
-    grid-template-areas: "mike" "billie" "tre";
+    grid-template-areas: "mike billie" "tre mike2" "billie2 tre2";
     grid-column-gap: 10px;
     grid-row-gap: 10px; }
+    .shop img {
+      object-fit: contain; }
     .shop__item {
       border: 2px dashed black;
       padding: 15px;
@@ -275,7 +294,25 @@ h2 {
         border: 2px dashed black;
         padding: 15px;
         font-size: 20px;
-        grid-area: tre; } }
+        grid-area: tre; }
+      .shop__item--cuatro {
+        /*@extend .shop__item;*/
+        border: 2px dashed black;
+        padding: 15px;
+        font-size: 20px;
+        grid-area: mike2; }
+      .shop__item--cinco {
+        /*@extend .shop__item;*/
+        border: 2px dashed black;
+        padding: 15px;
+        font-size: 20px;
+        grid-area: billie2; }
+      .shop__item--seis {
+        /*@extend .shop__item;*/
+        border: 2px dashed black;
+        padding: 15px;
+        font-size: 20px;
+        grid-area: tre2; } }
 
 @media only screen and (min-width: 840px) {
   .navbar-nav {
@@ -333,11 +370,13 @@ h2 {
     padding: 10px;
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 450px;
+    grid-template-rows: 450px 450px;
     justify-content: space-around;
-    grid-template-areas: "mike billie tre";
+    grid-template-areas: "mike billie tre" "mike2 billie2 tre2";
     grid-column-gap: 10px;
     grid-row-gap: 10px; }
+    .shop img {
+      object-fit: contain; }
     .shop__item {
       border: 2px dashed black;
       padding: 15px;
@@ -359,4 +398,22 @@ h2 {
         border: 2px dashed black;
         padding: 15px;
         font-size: 20px;
-        grid-area: tre; } }
+        grid-area: tre; }
+      .shop__item--cuatro {
+        /*@extend .shop__item;*/
+        border: 2px dashed black;
+        padding: 15px;
+        font-size: 20px;
+        grid-area: mike2; }
+      .shop__item--cinco {
+        /*@extend .shop__item;*/
+        border: 2px dashed black;
+        padding: 15px;
+        font-size: 20px;
+        grid-area: billie2; }
+      .shop__item--seis {
+        /*@extend .shop__item;*/
+        border: 2px dashed black;
+        padding: 15px;
+        font-size: 20px;
+        grid-area: tre2; } }
