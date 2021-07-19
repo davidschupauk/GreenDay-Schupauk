@@ -14,31 +14,26 @@
     <link rel="stylesheet" href="css/estiloProyecto.css">
 </head>
 <body>
-    <header>
-        <a href="index.html"><img id="logo" src="media/logoGD.png" alt=""></a>
-    </header>
-    <hr>
     <!--Listado de Menu-->
-    <nav class="nav">   
-        <ul class="nav__list">
-
-            <li class="nav__item">
-                <a class="nav__link nav__link--activo" href="index.html">Home</a>
-            </li>
-            <li class="nav__item">
-                <a class="nav__link" href="html/discografia.html">Discografia</a>
-            </li>
-            <li class="nav__item">
-                <a class="nav__link" href="html/shop.html">Shop</a>
-            </li>
-            <li class="nav__item">
-                <a class="nav__link" href="html/tours.html">Tours</a>
-            </li>
-            <li class="nav__item">
-                <a class="nav__link" href="html/contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img id="logo" src="media/logoGD.png" alt=""></a></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="html/discografia.html">Discografia</a>
+              <a class="nav-link" href="html/shop.html">Shop</a>
+              <a class="nav-link" href="html/tours.html">Tours</a>
+              <a class="nav-link" href="html/contacto.html">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!--Fin listado de Menu-->
     <hr>
     <h1>Sobre Nosotros</h1>
@@ -91,7 +86,7 @@
             </article>
             <article class="bioIndex">
                 <h2 class="titulosDeArticulos">Biografia de la banda</h2>
-                <p id="biografia">Green Day es una banda estadounidense de pop punk y punk rock​ integrada por tres miembros: Billie Joe Armstrong (guitarra y voz), Mike Dirnt (bajo y coros) y Tré Cool (batería y coros). <br>
+               <p id="biografia">Green Day es una banda estadounidense de pop punk y punk rock​ integrada por tres miembros: Billie Joe Armstrong (guitarra y voz), Mike Dirnt (bajo y coros) y Tré Cool (batería y coros). <br>
 
                     El grupo originario de California, se gestó en 1986 bajo el nombre de Sweet Children. En 1989 se cambiaron al nombre actual. <br>
                     
@@ -126,6 +121,7 @@
           </li>
       </ul>
     </footer>
+    
     <!--Fin Footer menu-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

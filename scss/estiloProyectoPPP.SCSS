@@ -1,92 +1,66 @@
-$title-color: #25A244;
 
+$title-color: #25A244;
+@keyframes aumentoEscala {
+    from{
+        transform: scale(1,1);
+    }
+    to{
+        transform: scale(1.5,1.5);
+        
+    }
+    
+}
+
+
+body{
+    background-image: radial-gradient(circle, rgba(183,239,197,1) 62%, rgba(124,124,124,1) 100%);
+    font-family: 'Odibee Sans', cursive;
+}
+header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#logo{
+    width: 90%; 
+}
+
+h1{
+    color: #1A7431;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: center;
+}
+h2{
+    color: #208B3A;
+}
+.titulosDeArticulos{
+    color: $title-color;
+}
+#biografia{
+    color: #10451D;
+}
+.shop{
+    img{
+        object-fit: contain;
+    }
+}
 @media only screen and (max-width:650px){
     
     @mixin linkSize($sizeLink, $tonoColor){
         font-size: $sizeLink;
         color: $tonoColor;
     }
-    header{
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-    #logo{
-        width: 90%; 
-    }
-
-    h1{
-        color: #1A7431;
-        text-transform: uppercase;
-        font-size: 70px;
-        text-align: center;
-    }
-    h2{
-        color: #208B3A;
-    }
-    .titulosDeArticulos{
-        color: $title-color;
-    }
-    #biografia{
-        color: #10451D;
-    }
+    
     
    
-    .nav{
-        .nav__list{
-            @include linkSize(35px, $title-color);
-            list-style-type: none;
-            text-align: center;
-            letter-spacing:5px;
-            text-decoration: none;
-            display: flex;
-            width: 100%;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-items: center;
-        }
-        .nav__item{
-            display: flex;
-            
-        }
-        
-        .nav__link{
-            @include linkSize(35px, $title-color);
-            text-transform: uppercase;  
-            text-decoration: none;
-            &--activo{
-                color: #2DC653;
-            }
-            &--activo:hover{
-                animation-name: aumentoEscala;
-                animation-duration: 2s;
-                transform: scale(1.5,1.5);
-            }
-        }
-        .nav__link:hover{
-            animation-name: aumentoEscala;
-            animation-duration: 2s;
-            transform: scale(1.5,1.5);
-        }
+    .navbar-nav{
+        @include linkSize(55px,$title-color);
+        align-items: center;
+        text-transform: uppercase;
     }
-    @keyframes aumentoEscala {
-        from{
-            transform: scale(1,1);
-        }
-        to{
-            transform: scale(1.5,1.5);
-            
-        }
-        
-    }
-    
-    
-    body{
-        background-image: radial-gradient(circle, rgba(183,239,197,1) 62%, rgba(124,124,124,1) 100%);
-        font-family: 'Odibee Sans', cursive;
-        
-    }
+
     
     #bloqueIndex{
         width: 100%;
@@ -254,87 +228,14 @@ $title-color: #25A244;
         font-size: $sizeLink;
         color: $tonoColor;
     }
-    header{
-        display: flex;
-        width: 100%;
+
+
+    .navbar-nav{
+        @include linkSize(55px,$title-color);
         align-items: center;
-        justify-content: center;
-    }
-    #logo{
-        width: 90%; 
-    }
-
-    h1{
-        color: #1A7431;
         text-transform: uppercase;
-        font-size: 70px;
-        text-align: center;
-    }
-    h2{
-        color: #208B3A;
-    }
-    .titulosDeArticulos{
-        color: $title-color;
-    }
-    #biografia{
-        color: #10451D;
     }
 
-    .nav{
-        .nav__list{
-            @include linkSize(40px,$title-color);
-            list-style-type: none;
-            text-align: center;
-            letter-spacing:5px;
-            text-decoration: none;
-            display: flex;
-            width: 100%;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
-        }
-        .nav__item{
-            display: flex;
-            
-        }
-        
-        .nav__link{
-            @include linkSize(35px, $title-color);
-            text-decoration: none;
-            text-transform: uppercase;
-            &--activo{
-                color: #2DC653;
-            }
-            &--activo:hover{
-                animation-name: aumentoEscala;
-                animation-duration: 2s;
-                transform: scale(1.5,1.5);
-            }
-        }
-        .nav__link:hover{
-            animation-name: aumentoEscala;
-            animation-duration: 2s;
-            transform: scale(1.5,1.5);
-        }
-
-    }
-    @keyframes aumentoEscala {
-        from{
-            transform: scale(1,1);
-        }
-        to{
-            transform: scale(1.5,1.5);
-            
-        }
-        
-    }
-    
-    
-    body{
-        background-image: radial-gradient(circle, rgba(183,239,197,1) 62%, rgba(124,124,124,1) 100%);
-        font-family: 'Odibee Sans', cursive;
-    }
     
     #bloqueIndex{
         width: 100%;
@@ -506,56 +407,12 @@ $title-color: #25A244;
         color: $tonoColor;
     }
 
-    .nav{
-        .nav__list{
-            @include linkSize(35px,$title-color);
-            list-style-type: none;
-            text-align: center;
-            letter-spacing:5px;
-            text-decoration: none;
-            display: flex;
-            width: 100%;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-            align-items: center;
-        }
-        .nav__item{
-            display: flex;
-            
-        }
-        
-        .nav__link{
-            @include linkSize(35px, $title-color);
-            text-decoration: none;
-            text-transform: uppercase;
-            &--activo{
-                color: #2DC653;
-            }
-            &--activo:hover{
-                animation-name: aumentoEscala;
-                animation-duration: 2s;
-                transform: scale(1.5,1.5);
-            }
-        }
-        .nav__link:hover{
-            animation-name: aumentoEscala;
-            animation-duration: 2s;
-            transform: scale(1.5,1.5);
-        }
-
+    .navbar-nav{
+        @include linkSize(35px,$title-color);
+        align-items: center;
+        text-transform: uppercase;
     }
-    @keyframes aumentoEscala {
-        from{
-            transform: scale(1,1);
-        }
-        to{
-            transform: scale(1.5,1.5);
-            
-        }
-        
-    }
-    
+   
    
 }
 @media only screen and (min-width: 1024px){
@@ -564,89 +421,14 @@ $title-color: #25A244;
         color: $tonoColor;
     }
 
-    header{
-        display: flex;
-        width: 100%;
+    
+    .navbar-nav{
+        @include linkSize(45px,$title-color);
         align-items: center;
-        justify-content: center;
-    }
-    #logo{
-        width: 90%; 
-    }
-
-    h1{
-        color: #1A7431;
         text-transform: uppercase;
-        font-size: 70px;
-        text-align: center;
-    }
-    h2{
-        color: #208B3A;
-    }
-    .titulosDeArticulos{
-        color: $title-color;
-    }
-    #biografia{
-        color: #10451D;
-    }
-    .nav{
-        .nav__list{
-            @include linkSize(35px,$title-color);
-            list-style-type: none;
-            text-align: center;
-            text-decoration: none;
-            letter-spacing:5px;
-            display: flex;
-            width: 100%;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-evenly;
-            align-items: stretch;
-        }
-        .nav__item{
-            display: flex;
-            
-        }
-        
-        .nav__link{
-            @include linkSize(35px,$title-color);
-            text-decoration: none;
-            text-transform: uppercase;
-              
-            &--activo{
-                color: #2DC653;
-                
-            }
-            &--activo:hover{
-                animation-name: aumentoEscala;
-                animation-duration: 2s;
-                transform: scale(1.5,1.5);
-            }
-        }
-        .nav__link:hover{
-            animation-name: aumentoEscala;
-            animation-duration: 2s;
-            transform: scale(1.5,1.5);
-        }
-
     }
 
-    @keyframes aumentoEscala {
-        from{
-            transform: scale(1,1);
-        }
-        to{
-            transform: scale(1.5,1.5);
-            
-        }
-        
-    }
     
-    
-    body{
-        background-image: radial-gradient(circle, rgba(183,239,197,1) 62%, rgba(124,124,124,1) 100%);
-        font-family: 'Odibee Sans', cursive;
-    }
     
     #bloqueIndex{
         width: 100%;
