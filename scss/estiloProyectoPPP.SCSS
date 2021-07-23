@@ -1,6 +1,5 @@
 
 /*FOOTER*/
-
 footer {
     background: black;
     a {
@@ -112,10 +111,12 @@ $title-color: #25A244;
 }
 
 body{
-    background-image: radial-gradient(circle, rgba(183,239,197,1) 62%, rgba(124,124,124,1) 100%);
+    background-color: rgba(185,241,199,1);
     font-family: 'Odibee Sans', cursive;
 }
 header{
+    background: rgb(185,241,199);
+    background: linear-gradient(0deg, rgba(185,241,199,1) 47%, rgba(0,0,0,1) 100%);
     display: flex;
     width: 100%;
     align-items: center;
@@ -158,9 +159,9 @@ h2{
 
     
     #bloqueIndex{
-        width: 95%;
-        padding: 5px;
-        margin: 10px;
+        width: 100%;
+        padding: 50px;
+        margin: 0px;
     }
     
     #formContacto{
@@ -293,9 +294,9 @@ h2{
     }
 
     #bloqueIndex{
-            width: 95%;
-            padding: 5px;
-            margin: 10px;
+        width: 100%;
+        padding: 50px;
+        margin: 0px;
     }
     
     .articuloUno{
@@ -463,9 +464,9 @@ h2{
     
     
     #bloqueIndex{
-        width: 95%;
-        padding: 5px;
-        margin: 10px;
+        width: 100%;
+        padding: 50px;
+        margin: 0px;
     }
     
     #formContacto{

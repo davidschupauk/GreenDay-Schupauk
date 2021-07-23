@@ -83,10 +83,12 @@ ul.social-network li {
     transform: scale(1.5, 1.5); } }
 
 body {
-  background-image: radial-gradient(circle, #b7efc5 62%, #7c7c7c 100%);
+  background-color: #b9f1c7;
   font-family: 'Odibee Sans', cursive; }
 
 header {
+  background: #b9f1c7;
+  background: linear-gradient(0deg, #b9f1c7 47%, black 100%);
   display: flex;
   width: 100%;
   align-items: center;
@@ -117,9 +119,9 @@ h2 {
     align-items: center;
     text-transform: uppercase; }
   #bloqueIndex {
-    width: 95%;
-    padding: 5px;
-    margin: 10px; }
+    width: 100%;
+    padding: 50px;
+    margin: 0px; }
   #formContacto {
     border: 1.5px solid black;
     padding: 10px; }
@@ -214,9 +216,9 @@ h2 {
     align-items: center;
     text-transform: uppercase; }
   #bloqueIndex {
-    width: 95%;
-    padding: 5px;
-    margin: 10px; }
+    width: 100%;
+    padding: 50px;
+    margin: 0px; }
   .articuloUno {
     grid-area: ar1; }
   .articuloDos {
@@ -328,9 +330,9 @@ h2 {
     align-items: center;
     text-transform: uppercase; }
   #bloqueIndex {
-    width: 95%;
-    padding: 5px;
-    margin: 10px; }
+    width: 100%;
+    padding: 50px;
+    margin: 0px; }
   #formContacto {
     border: 1.5px solid black;
     padding: 10px; }
