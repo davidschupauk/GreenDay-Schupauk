@@ -82,6 +82,9 @@ ul.social-network li {
   to {
     transform: scale(1.5, 1.5); } }
 
+.tablatours {
+  margin: 25px; }
+
 body {
   background-color: #b9f1c7;
   font-family: 'Odibee Sans', cursive; }
@@ -111,6 +114,9 @@ h2 {
 
 #biografia {
   color: #10451D; }
+
+#formContacto {
+  margin: 25px; }
 
 @media only screen and (max-width: 650px) {
   .navbar-nav {
