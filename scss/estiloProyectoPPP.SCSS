@@ -133,8 +133,9 @@ header{
 h1{
     color: #1A7431;
     text-transform: uppercase;
-    font-size: 70px;
+    font-size: 65px;
     text-align: center;
+    padding: 10px 30px 10px 30px;
 }
 h2{
     color: #208B3A;
@@ -148,6 +149,31 @@ h2{
 #formContacto{
     margin: 25px;
 }
+
+#bloqueIndex{
+    width: 100%;
+    padding: 15px 50px 15px 50px;
+    margin: 0px;
+}
+
+.btn{
+    color: black;
+    background-color: #3d6b01;
+}
+.btn:hover{
+    background-color: #10451D;
+    color: black;
+}
+.input-group-text{
+    background-color: #3d6b01;
+    color: black;
+}
+.form-check-input:checked{
+    background-color: #3d6b01;
+    border-color: black;
+}
+
+
 
 @media only screen and (max-width:650px){
     
@@ -163,12 +189,8 @@ h2{
         align-items: center;
         text-transform: uppercase;
     }
-
-    
-    #bloqueIndex{
-        width: 100%;
-        padding: 50px;
-        margin: 0px;
+    .container-fluid{
+        flex-direction: row-reverse;
     }
     
     #formContacto{
@@ -207,6 +229,7 @@ h2{
     .discos{
         display: flex;
         height: 100%;
+        padding: 15px 30px 15px 30px;
         justify-content:space-around;
         flex-direction: row;
         flex-wrap: wrap;
@@ -299,11 +322,8 @@ h2{
         align-items: center;
         text-transform: uppercase;
     }
-
-    #bloqueIndex{
-        width: 100%;
-        padding: 50px;
-        margin: 0px;
+    .container-fluid{
+        flex-direction: row-reverse;
     }
     
     .articuloUno{
@@ -364,6 +384,7 @@ h2{
     .discos{
         display: flex;
         height: 100%;
+        padding: 15px 30px 15px 30px;
         justify-content:space-around;
         flex-direction: row;
         flex-wrap: wrap;
@@ -451,10 +472,22 @@ h2{
         @include linkSize(35px,$title-color);
         align-items: center;
         text-transform: uppercase;
+    } 
+
+    .container-fluid{
+        flex-direction: row-reverse;
     }
-   
+    
    
 }
+
+@media only screen and (min-width: 990px){
+    .container-fluid{
+        flex-direction: row;
+    }
+}
+
+
 @media only screen and (min-width: 1024px){
     @mixin linkSize($sizeLink, $tonoColor){
         font-size: $sizeLink;
@@ -468,13 +501,12 @@ h2{
         text-transform: uppercase;
     }
 
-    
-    
-    #bloqueIndex{
-        width: 100%;
-        padding: 50px;
-        margin: 0px;
+    .container-fluid{
+        flex-direction: row;
     }
+    
+    
+    
     
     #formContacto{
         border: 1.5px solid black;
@@ -513,6 +545,7 @@ h2{
     .discos{
         display: flex;
         height: 100%;
+        padding: 15px 30px 15px 30px;
         justify-content:space-around;
         flex-direction: row;
         flex-wrap: wrap;
