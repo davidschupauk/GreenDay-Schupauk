@@ -71,10 +71,19 @@ ul.social-network li {
   background-color: #3d6b01; }
 
 .accordion-button {
+  color: #000000;
   font-size: 20px; }
 
+.accordion-button:not(.collapsed) {
+  color: #3d6b01;
+  font-size: 25px; }
+
+.accordion-button:focus {
+  color: #3d6b01;
+  font-size: 25px; }
+
 .accordion-collapse {
-  font-size: 2 0px; }
+  font-size: 20px; }
 
 @keyframes aumentoEscala {
   from {
@@ -85,13 +94,16 @@ ul.social-network li {
 .tablatours {
   margin: 25px; }
 
+.lead {
+  font-size: 1.05rem; }
+
 body {
   background-color: #b9f1c7;
   font-family: 'Odibee Sans', cursive; }
 
 header {
   background: #b9f1c7;
-  background: linear-gradient(0deg, #b9f1c7 47%, black 100%);
+  background: linear-gradient(0deg, #b9f1c7 82%, black 100%);
   display: flex;
   width: 100%;
   align-items: center;
